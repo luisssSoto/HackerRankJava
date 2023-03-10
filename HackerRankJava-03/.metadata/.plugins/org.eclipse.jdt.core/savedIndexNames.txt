@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Cohorte23\HackerRank\HackerRankJava-03\.metadata\.plugins\org.eclipse.jdt.core
+1050890436.index
+1929814825.index
+1865797976.index

@@ -1,0 +1,36 @@
+package hackerRank02;
+
+import java.util.Scanner;
+
+public class HackerRank02 {
+	public static void main(String[] args) {
+		Scanner sn1 = new Scanner(System.in);
+		
+		System.out.println("Cuantas series te gustaria imprimir? ");
+		int t = sn1.nextInt();
+	
+		int stop = 0;
+		
+		while (stop < t) {
+			System.out.println("Ingresa el valor a: ");
+			int a = sn1.nextInt();
+			System.out.println("Ingresa el valor b: ");
+			int b = sn1.nextInt();
+			System.out.println("Ingresa el valor n: ");
+			int n = sn1.nextInt();
+			int result = 0;
+			for (int i = 0; i < n; i++) {
+				result += a + Math.pow(2, i) * b;
+				if (i >= 1) {
+					result -= a;
+				}
+				System.out.print(result + " ");
+			}
+			stop ++;
+			
+		}
+
+	
+
+	}
+}

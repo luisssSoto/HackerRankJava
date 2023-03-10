@@ -1,0 +1,33 @@
+package hackerRank02;
+
+import java.util.Scanner;
+
+public class HackerRank02 {
+	public static void main(String[] args) {
+		Scanner sn1 = new Scanner(System.in);
+		//System.out.println("Ingresa el exponente: ");
+		//int numSeries = sn1.nextInt();
+		int a = 5;
+		double b = 3;
+		int n = 0;
+		double result = 0;
+		/*for (int i = 0; i < numSeries; i ++) {
+			System.out.println("serie" + i + " = " + Math.pow(2, i));
+		}*/
+		//So=a+2**0*b=8
+		//So=a+2**0*b+2**1*b=14
+		//So=a+2**0*b+2**1*b+2**2*b=36
+		for (int i = 0; i<= n; i ++) {
+			System.out.println("Serie" + i);
+			result = a;
+			for (int j = 0; j <= i; j++) {
+				if (j == n) {
+					System.out.print("serie" + j + " ");
+					result += + Math.pow(2, j) * b;
+					System.out.println(result);
+				}
+			}
+		}
+		
+	}
+}
